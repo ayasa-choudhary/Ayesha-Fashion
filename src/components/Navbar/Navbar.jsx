@@ -3,7 +3,7 @@ import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
-import DarkMode from "./DarkMode";
+import DarkMode from "./Darkmode";
 import { FiShoppingBag } from "react-icons/fi";
 
 const Menu = [
@@ -50,7 +50,7 @@ const DropdownLinks = [
       link: "/#",
     },
   ];
-  
+
   const Navbar = ({ handleOrderPopup }) => {
     return (
       <div className="shadow-md bg-white dark:bg-slate-800 dark:text-white duration-200 relative z-40">
@@ -63,7 +63,7 @@ const DropdownLinks = [
                 Ayesha-Fashion
               </a>
             </div>
-  
+
             {/* search bar */}
             <div className="flex justify-between items-center gap-4">
               <div className="relative group hidden sm:block">
@@ -75,7 +75,7 @@ const DropdownLinks = [
                 />
                 <IoMdSearch className="text-slate-800 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
               </div>
-  
+
               {/* order button */}
               <button
                 onClick={() => handleOrderPopup()}
@@ -86,7 +86,7 @@ const DropdownLinks = [
                 </span>
                 <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
               </button>
-  
+
               {/* Darkmode Switch */}
               <div>
                 <DarkMode />
@@ -135,5 +135,5 @@ const DropdownLinks = [
       </div>
     );
   };
-  
+
   export default Navbar;
